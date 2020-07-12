@@ -1,0 +1,259 @@
+.user-navbar-section {
+    background-color: #ffff !important;
+    color: #575a89 !important;
+    font-family: 'Bitter' !important;
+    font-size: 17px;
+    .fixed-top {
+        position: fixed !important;
+        font-size:inherit;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        font-family:inherit;
+    }
+
+    .usr-navbar {
+        font-family:inherit;
+        font-size:inherit;
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: .5rem 1rem;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px 0px;
+        //0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 2px 6px 2px rgba(60, 64, 67, 0.15);
+        height: 64px;
+        background-color: inherit !important;
+        padding-left: 5px;
+        padding-right: 5px;
+
+        @media (min-width: 992px) {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        a {
+            font-size:inherit;
+            font-family:inherit;
+            color: inherit !important;
+        }
+
+        a:hover {
+            font-family:inherit;
+            text-decoration: none;
+            color: inherit !important;
+        }
+
+        .navbar-toggler {
+            font-family:inherit;
+            padding: .25rem .75rem;
+            font-size: 17px;
+            line-height: 1;
+            background-color: inherit;
+            border: 1px solid transparent;
+            text-align: center;
+            vertical-align: middle;
+            margin-top: 7px;
+            margin-right: 6px;
+
+            .navbar-toggler-icon {
+                .fa {
+                    color: #575a89 !important;
+                }
+            }
+        }
+
+        .navbar-brand {
+            font-family:inherit;
+            font-size:inherit;
+            display: inline-block;
+            padding-top: .3125rem;
+            padding-bottom: .3125rem;
+            margin-right: 1rem;
+            font-size: 1.25rem;
+            line-height: inherit;
+            white-space: nowrap;
+            color: inherit !important;
+            text-transform: uppercase;
+
+            @media (min-width: 992px) {
+                margin-right: 0 !important;
+            }
+        }
+
+        .navbar-collapse {
+            font-family:inherit;
+            -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            -ms-flex-align: center;
+            align-items: center;
+
+            @media (min-width: 992px) {
+                display: -ms-flexbox !important;
+                display: flex !important;
+                -ms-flex-preferred-size: auto;
+                flex-basis: auto;
+            }
+        }
+
+        .dropdown {
+            font-family:inherit;
+            font-size:inherit;
+            color: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            padding-left: 0;
+            margin-bottom: 0;
+            margin-right: 10px;
+
+            .dropdown-toggle {
+                font-family:inherit;
+                padding: 0;
+                margin: 0;
+            }
+
+            .dropdown-menu {
+                font-family:inherit;
+                border: transparent;
+                margin: auto;
+                left: auto;
+                right: 0px;
+                max-width: 200px;
+                ul {
+                    font-family:inherit;
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    list-style-image: none;
+                    list-style-image: none;
+
+                    li {
+                        font-family:inherit;
+                        padding: 0 !important;
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                        text-align: left;
+                        width: 100%;
+                        line-height: 1.4;
+                        white-space: nowrap;
+                        font-size: 18px;
+                        font-weight: 300;
+                        list-style: none;
+                        border-top: 1px solid rgba(255, 255, 255, .2);
+                        padding: 40px 0 35px;
+
+                        .dropdown-item {
+                            font-family:inherit;
+                            padding: 7px 25px;
+                            border-color: rgba(0, 0, 0, 0.6) !important;
+                            color: rgba(0, 0, 0, 0.6) !important;
+                            text-align: left;
+                            width: 100%;
+                            line-height: 1.4;
+                            white-space: nowrap;
+                            transition: .1s background-color, .1s border-color, .1s color, .1s fill;
+                            font-size: 16px;
+                            overflow: hidden;
+                            text-overflow: clip;
+                            cursor: default;
+                        }
+                        .dropdown-item:active {
+                            font-family:inherit;
+                            font-weight: 800;
+                            text-decoration: none;
+                            color: inherit;
+                            background-color: inherit;
+                        }
+                    }
+                    .seperator{
+                        font-family:inherit;
+                        border-top: solid 1px rgba(0, 0, 0, .05);
+                        margin-top: 2px;
+                        margin-bottom: 0px;
+                        padding-bottom: 0;
+                        padding-top: 0;
+                        opacity: 1;
+                        font-size: 18px;
+                        font-weight: 300;
+                        display: block;
+                        padding: 5px 0;
+                        visibility: visible;
+                        color: rgba(0,0,0,.84);
+                    }
+                }
+            }
+        }
+
+        .offcanvas-collapse {
+            @media (max-width: 991.98px) {
+                font-family:inherit;
+                position: fixed;
+                top: 56px;
+                bottom: 0;
+                right: 100%;
+                width: 100%;
+                padding-right: 1rem;
+                padding-left: 1rem;
+                overflow-y: auto;
+                visibility: hidden;
+                background-color: inherit !important;
+                transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+                transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+                transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+            }
+
+        }
+
+        .offcanvas-collapse.open {
+            @media (max-width: 991.98px) {
+                font-family:inherit;
+                visibility: visible;
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+        }
+
+        .navbar-nav {
+            font-family:inherit;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+            font-size:inherit;
+            @media (min-width: 992px) {
+                flex-direction: row;
+                margin-left: 35px;
+            }
+
+            .nav-item {
+                .nav-link {
+                    padding-left: 1rem;
+                }
+            }
+
+            .nav-item.active {
+                font-weight: 800;
+            }
+        }
+
+        .mr-auto,
+        .mx-auto {
+            margin-right: auto !important;
+        }
+    }
+}

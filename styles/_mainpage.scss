@@ -1,0 +1,197 @@
+.main-page {
+    // background-color: inherit !important;
+    // max-width: 680px;
+    // width: 100%;
+    // margin: 0 auto;
+    // -webkit-box-sizing: border-box;
+    // box-sizing: border-box;
+    // -webkit-box-pack: justify;
+    // -webkit-justify-content: space-between;
+    // -ms-flex-pack: justify;
+    // justify-content: space-between;
+    background: #f8f8f8;
+    padding-top: 50px;
+    margin-bottom: 150px;
+    font-size: 0.9rem !important;
+    @media screen and (max-width: 1200px) {
+        padding-top: 10px;
+        margin-bottom: 20px;
+    }
+    .main-section {
+        .container {
+            width: 900px;
+            background: #fff;
+            margin: 0 auto;
+            box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+            -webkit-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+            -o-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+            -ms-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+            border-radius: 20px;
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -o-border-radius: 20px;
+            -ms-border-radius: 20px;
+
+            @media screen and (max-width: 1200px) {
+                width: calc(100% - 30px);
+                max-width: 100%;
+            }
+
+            .content-main {
+                display: flex;
+                display: -webkit-flex;
+                padding: 75px 0;
+                color: black;
+                -webkit-animation: fadein 0.75s;
+                animation: fadein 0.75s ease-in;
+
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                    -moz-flex-direction: column;
+                    -webkit-flex-direction: column;
+                    -o-flex-direction: column;
+                    -ms-flex-direction: column;
+                    justify-content: center;
+                    -moz-justify-content: center;
+                    -webkit-justify-content: center;
+                    -o-justify-content: center;
+                    -ms-justify-content: center;
+                }
+
+                .form-sec {
+                    margin-left: 75px;
+                    //margin-right: 75px;
+                    padding-left: 34px;
+                    width: 50%;
+                    overflow: hidden;
+
+                    .title-text {
+                        margin-bottom: 33px;
+                        line-height: 1.66;
+                        margin: 0;
+                        padding: 0;
+                        font-weight: bold;
+                        color: #222;
+                        font-size: 36px;
+                        display: inline-block;
+                        font-size: 1.5em;
+                        margin-block-start: 0.83em;
+                        margin-block-end: 0.83em;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                        font-weight: bold;
+                    }
+
+                    .form-content {
+                        width: 100%;
+
+                        .form-group {
+                            position: relative;
+                            margin-bottom: 25px;
+                            overflow: hidden;
+
+                            .form-control {
+                                &:focus {
+                                    color: #495057;
+                                    background-color: #fff;
+                                    border-color: #80bdff;
+                                    outline: 0;
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                        .form-button{
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+
+                    .checkbox {
+                        label {
+                            input {
+                                width: 15px;
+                                height: 15px;
+                            }
+
+                            svg {
+                                width: 15px;
+                                height: 15px;
+                            }
+                        }
+
+                        span {
+                            vertical-align: top;
+                            margin-left: 4px;
+
+                            i {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        width: auto;
+                        margin-left: 0px;
+                        margin-right: 0px;
+                        padding-left: 0px;
+                        padding: 0 30px;
+                    }
+                }
+
+                .img-sec {
+                    margin: 0 55px;
+                    margin-top: 45px;
+                    width: 50%;
+                    overflow: hidden;
+
+                    @media screen and (max-width:768px) {
+                        width: auto;
+                    }
+
+                    .main-image {
+                        margin-bottom: 50px;
+                        text-align: center;
+                        margin: 0;
+                        display: block;
+                        margin-block-start: 1em;
+                        margin-block-end: 1em;
+                        margin-inline-start: 40px;
+                        margin-inline-end: 40px;
+                        @media screen and (max-width: 1200px) {
+                        display: none;
+                        }
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+
+                        .previewImg {
+                            border: 2px solid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//Animations
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
